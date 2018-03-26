@@ -1,0 +1,130 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8082",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/resource" : {
+      "post" : {
+        "description" : "",
+        "operationId" : "post-resource",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/name"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a number to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/number"
+            }
+          }
+        }
+      }
+    },
+    "/updateuser" : {
+      "post" : {
+        "description" : "",
+        "operationId" : "post-updateuser",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/parameter"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Update to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Update"
+            }
+          }
+        }
+      }
+    },
+    "/adduser" : {
+      "post" : {
+        "description" : "",
+        "operationId" : "post-adduser",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/parameter"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Update to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Update"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "number" : {
+      "type" : "object",
+      "properties" : {
+        "age" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "parameter" : {
+      "type" : "object",
+      "required" : [ "nik", "name" ],
+      "properties" : {
+        "nik" : {
+          "type" : "string"
+        },
+        "age" : {
+          "type" : "integer"
+        },
+        "name" : {
+          "type" : "string"
+        }
+      }
+    },
+    "name" : {
+      "type" : "object",
+      "required" : [ "name" ],
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Update" : {
+      "type" : "object",
+      "properties" : {
+        "noUpdated" : {
+          "type" : "integer"
+        }
+      }
+    }
+  }
+}

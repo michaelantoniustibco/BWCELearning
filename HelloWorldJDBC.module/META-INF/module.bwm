@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_By6gEC6OEeiQl8RcJeFWzg" targetNamespace="http://tns.tibco.com/bw/composite/HelloWorldJDBC.module" name="HelloWorldJDBC.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_lrGrYC6OEeiQl8RcJeFWzg" name="resource" promote="ComponentProcess/resource">
+    <sca:interface.wsdl xmi:id="_lrNZEC6OEeiQl8RcJeFWzg" interface="http://xmlns.example.com/20180323183339PLT#wsdl.interface(resource)"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_lrVU4C6OEeiQl8RcJeFWzg" name="RestService" path="/resource" docBasePath="http://localhost:7777/HelloWorldJDBC.module" docResourcePath="Resource" basePath="/" connector="helloworldjdbc.module.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/helloworldjdbc.module.Process-Resource.json">
+      <operation xmi:id="_lraNYC6OEeiQl8RcJeFWzg" operationName="post" nickname="post-resource" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_lsWBgC6OEeiQl8RcJeFWzg"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_lraNYS6OEeiQl8RcJeFWzg" bindingName="RestService"/>
+  </sca:service>
+  <sca:service xmi:id="_x1lVIC6XEeiKcd9JgkZIRA" name="adduser" promote="ComponentProcess/adduser">
+    <sca:interface.wsdl xmi:id="_x1qNoC6XEeiKcd9JgkZIRA" interface="http://xmlns.example.com/20180323183339PLT#wsdl.interface(adduser)"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_x1vGIC6XEeiKcd9JgkZIRA" name="RestService1" path="/adduser" docBasePath="http://localhost:7777/HelloWorldJDBC.module" docResourcePath="Resource" basePath="/" connector="helloworldjdbc.module.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/helloworldjdbc.module.Process-Resource.json">
+      <operation xmi:id="_x1wUQC6XEeiKcd9JgkZIRA" operationName="post" nickname="post-adduser" httpMethod="POST" responseStyle="element">
+        <parameters xmi:id="_V6IXAC-AEeiMv8ZnNV21Sg"/>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_x11z0C6XEeiKcd9JgkZIRA"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_x1wUQS6XEeiKcd9JgkZIRA" bindingName="RestService1"/>
+  </sca:service>
+  <sca:service xmi:id="_6XqD4C6XEeiKcd9JgkZIRA" name="updateuser" promote="ComponentProcess/updateuser">
+    <sca:interface.wsdl xmi:id="_6XqD5C6XEeiKcd9JgkZIRA" interface="http://xmlns.example.com/20180323183339PLT#wsdl.interface(updateuser)" scaext:wsdlLocation="../Processes/helloworldjdbc/module/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_6Xqq8C6XEeiKcd9JgkZIRA" name="RestService2" path="/updateuser" docBasePath="http://localhost:7777/HelloWorldJDBC.module" docResourcePath="Resource" basePath="/" connector="helloworldjdbc.module.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/helloworldjdbc.module.Process-Resource.json">
+      <operation xmi:id="_6Xqq8S6XEeiKcd9JgkZIRA" operationName="post" nickname="post-updateuser" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <parameters xmi:id="_1xYj0C99EeiMv8ZnNV21Sg"/>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_6Xqq8i6XEeiKcd9JgkZIRA" bindingName="RestService2"/>
+  </sca:service>
+  <sca:property xmi:id="_CY9zcC6OEeiQl8RcJeFWzg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_CZILgC6OEeiQl8RcJeFWzg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_CZLO0C6OEeiQl8RcJeFWzg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_CZOSIC6OEeiQl8RcJeFWzg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_CZR8gC6OEeiQl8RcJeFWzg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_CZVm4C6OEeiQl8RcJeFWzg" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_CZZ4UC6OEeiQl8RcJeFWzg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_y5CsUC6OEeiQl8RcJeFWzg" name="BW.HOST.NAME1" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_CI6lQC6OEeiQl8RcJeFWzg" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_CI7MUC6OEeiQl8RcJeFWzg" processName="helloworldjdbc.module.Process"/>
+    <sca:service xmi:id="_lrDBAC6OEeiQl8RcJeFWzg" name="resource">
+      <sca:interface.wsdl xmi:id="_lrEPIC6OEeiQl8RcJeFWzg" interface="http://xmlns.example.com/20180323183339PLT#wsdl.interface(resource)"/>
+    </sca:service>
+    <sca:service xmi:id="_x1iR0C6XEeiKcd9JgkZIRA" name="adduser">
+      <sca:interface.wsdl xmi:id="_x1jf8C6XEeiKcd9JgkZIRA" interface="http://xmlns.example.com/20180323183339PLT#wsdl.interface(adduser)"/>
+    </sca:service>
+    <sca:service xmi:id="_6Xpc0C6XEeiKcd9JgkZIRA" name="updateuser">
+      <sca:interface.wsdl xmi:id="_6Xpc0S6XEeiKcd9JgkZIRA" interface="http://xmlns.example.com/20180323183339PLT#wsdl.interface(updateuser)" scaext:wsdlLocation="../Processes/helloworldjdbc/module/Process.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

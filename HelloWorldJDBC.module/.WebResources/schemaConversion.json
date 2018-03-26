@@ -1,0 +1,17 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/HelloWorldJDBC.module/Service Descriptors/helloworldjdbc.module.Process-Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1521804947653"
+    },
+    {
+        "jsonSchemaLocation": "/HelloWorldJDBC.module/Service Descriptors/helloworldjdbc.module.Process-Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1521805019599"
+    },
+    {
+        "jsonSchemaLocation": "/HelloWorldJDBC.module/Service Descriptors/helloworldjdbc.module.Process-Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1521907715427"
+    }
+]}
