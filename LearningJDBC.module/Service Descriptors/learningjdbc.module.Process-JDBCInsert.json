@@ -1,0 +1,125 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8083",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/jdbcinsert1" : {
+      "post" : {
+        "description" : "",
+        "operationId" : "post-jdbcinsert1",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/param"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a updated to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/updated"
+            }
+          }
+        }
+      }
+    },
+    "/jdbcquery" : {
+      "post" : {
+        "description" : "",
+        "operationId" : "post-jdbcquery",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a statusArray to be returned",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/statusArray",
+                "uniqueItems" : false
+              }
+            }
+          }
+        }
+      }
+    },
+    "/jdbcinsert" : {
+      "post" : {
+        "description" : "",
+        "operationId" : "post-jdbcinsert",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/param"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a updated to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/updated"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "param" : {
+      "type" : "object",
+      "required" : [ "nik", "name", "age" ],
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "age" : {
+          "type" : "integer"
+        },
+        "nik" : {
+          "type" : "string"
+        }
+      }
+    },
+    "updated" : {
+      "type" : "object",
+      "required" : [ "noUpdated" ],
+      "properties" : {
+        "noUpdated" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "statusArray" : {
+      "type" : "object",
+      "required" : [ "status" ],
+      "properties" : {
+        "status" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

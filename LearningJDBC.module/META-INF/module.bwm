@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_cqvXYDCtEeiQn80-REPTBg" targetNamespace="http://tns.tibco.com/bw/composite/LearningJDBC.module" name="LearningJDBC.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_kDlNMjCtEeiQn80-REPTBg" name="jdbcinsert" promote="ComponentProcess/jdbcinsert">
+    <sca:interface.wsdl xmi:id="_kDu-MjCtEeiQn80-REPTBg" interface="http://xmlns.example.com/20180326112336PLT#wsdl.interface(jdbcinsert)"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_kD6kYDCtEeiQn80-REPTBg" name="RestService" path="/jdbcinsert" docBasePath="http://localhost:7777/LearningJDBC.module" docResourcePath="JDBCInsert" basePath="/" connector="learningjdbc.module.JDBCInsert" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/learningjdbc.module.Process-JDBCInsert.json">
+      <operation xmi:id="_kD-OwDCtEeiQn80-REPTBg" operationName="post" nickname="post-jdbcinsert" httpMethod="POST" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_kErZYDCtEeiQn80-REPTBg"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_kD-OwTCtEeiQn80-REPTBg" bindingName="RestService"/>
+  </sca:service>
+  <sca:service xmi:id="_-Nl7ojCwEeiQn80-REPTBg" name="jdbcinsert1" promote="ComponentProcess/jdbcinsert1">
+    <sca:interface.wsdl xmi:id="_-Nl7pjCwEeiQn80-REPTBg" interface="http://xmlns.example.com/20180326112336PLT#wsdl.interface(jdbcinsert1)"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_-Nl7pzCwEeiQn80-REPTBg" name="RestService1" path="/jdbcinsert1" docBasePath="http://localhost:7777/LearningJDBC.module" docResourcePath="JDBCInsert" basePath="/" connector="learningjdbc.module.JDBCInsert" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/learningjdbc.module.Process-JDBCInsert.json">
+      <operation xmi:id="_-Nl7qDCwEeiQn80-REPTBg" operationName="post" nickname="post-jdbcinsert1" httpMethod="POST" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_-NvsoDCwEeiQn80-REPTBg"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_-Nl7qTCwEeiQn80-REPTBg" bindingName="RestService1"/>
+  </sca:service>
+  <sca:service xmi:id="__JftwjCxEeiQn80-REPTBg" name="jdbcquery" promote="ComponentProcess/jdbcquery">
+    <sca:interface.wsdl xmi:id="__JftxjCxEeiQn80-REPTBg" interface="http://xmlns.example.com/20180326112336PLT#wsdl.interface(jdbcquery)"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="__JftxzCxEeiQn80-REPTBg" name="RestService2" path="/jdbcquery" docBasePath="http://localhost:7777/LearningJDBC.module" docResourcePath="JDBCInsert" basePath="/" connector="learningjdbc.module.JDBCInsert" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/learningjdbc.module.Process-JDBCInsert.json">
+      <operation xmi:id="__JftyDCxEeiQn80-REPTBg" operationName="post" nickname="post-jdbcquery" httpMethod="POST" responseStyle="array">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="__JftyTCxEeiQn80-REPTBg" bindingName="RestService2"/>
+  </sca:service>
+  <sca:property xmi:id="_dO_T8DCtEeiQn80-REPTBg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dPJE8DCtEeiQn80-REPTBg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dPJE8TCtEeiQn80-REPTBg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dPJE8jCtEeiQn80-REPTBg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dPS18DCtEeiQn80-REPTBg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dPS18TCtEeiQn80-REPTBg" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_dPS18jCtEeiQn80-REPTBg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_c-lgcDCtEeiQn80-REPTBg" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_c-lgcTCtEeiQn80-REPTBg" processName="learningjdbc.module.Process"/>
+    <sca:service xmi:id="_kDlNMDCtEeiQn80-REPTBg" name="jdbcinsert">
+      <sca:interface.wsdl xmi:id="_kDlNMTCtEeiQn80-REPTBg" interface="http://xmlns.example.com/20180326112336PLT#wsdl.interface(jdbcinsert)"/>
+    </sca:service>
+    <sca:service xmi:id="_-Nl7oDCwEeiQn80-REPTBg" name="jdbcinsert1">
+      <sca:interface.wsdl xmi:id="_-Nl7oTCwEeiQn80-REPTBg" interface="http://xmlns.example.com/20180326112336PLT#wsdl.interface(jdbcinsert1)"/>
+    </sca:service>
+    <sca:service xmi:id="__JftwDCxEeiQn80-REPTBg" name="jdbcquery">
+      <sca:interface.wsdl xmi:id="__JftwTCxEeiQn80-REPTBg" interface="http://xmlns.example.com/20180326112336PLT#wsdl.interface(jdbcquery)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

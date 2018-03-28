@@ -1,0 +1,22 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/LearningJDBC.module/Service Descriptors/learningjdbc.module.Process-JDBCInsert.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1522038575457"
+    },
+    {
+        "jsonSchemaLocation": "/LearningJDBC.module/Service Descriptors/learningjdbc.module.Process-JDBCInsert.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1522038688870"
+    },
+    {
+        "jsonSchemaLocation": "/LearningJDBC.module/Service Descriptors/learningjdbc.module.Process-JDBCInsert.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1522231402928"
+    },
+    {
+        "jsonSchemaLocation": "/LearningJDBC.module/Service Descriptors/learningjdbc.module.Process-JDBCInsert.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1522239596080"
+    }
+]}

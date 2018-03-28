@@ -1,0 +1,7 @@
+{
+    "records": [],
+    "resources": [{
+        "location": "Service Descriptors/restget.module.Process-HelloWorld.json",
+        "type": "generated"
+    }]
+}
